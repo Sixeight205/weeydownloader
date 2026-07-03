@@ -1,0 +1,17 @@
+{
+  "name": "weey-downloader",
+  "version": "1.0.0",
+  "description": "Free YouTube, TikTok & Instagram Video Downloader",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "postinstall": "node scripts/setup-yt-dlp.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "uuid": "^9.0.0"
+  },
+  "keywords": ["video downloader", "youtube", "tiktok", "instagram"],
+  "license": "MIT"
+}

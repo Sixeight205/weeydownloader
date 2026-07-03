@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WeeY Downloader — Free YouTube, TikTok & Instagram Video Downloader</title>
+  <meta name="description" content="Download YouTube, TikTok and Instagram videos for free in HD quality. No watermark, no signup required. Fast and easy online video downloader." />
+  <meta name="keywords" content="youtube video downloader, tiktok video downloader, instagram video downloader, download youtube videos free, tiktok downloader no watermark, instagram reels downloader, online video downloader" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://weeydownloader.com/" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://weeydownloader.com/" />
+  <meta property="og:title" content="WeeY Downloader — Free YouTube, TikTok & Instagram Video Downloader" />
+  <meta property="og:description" content="Download YouTube, TikTok and Instagram videos for free in HD. No watermark, no signup." />
+  <meta property="og:image" content="https://weeydownloader.com/og-image.svg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="WeeY Downloader — Free Video Downloader" />
+  <meta name="twitter:description" content="Download YouTube, TikTok and Instagram videos for free in HD quality." />
+  <meta name="twitter:image" content="https://weeydownloader.com/og-image.svg" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebApplication",
+        "name":"WeeY Downloader",
+        "url":"https://weeydownloader.com",
+        "description":"Free online video downloader for YouTube, TikTok and Instagram",
+        "applicationCategory":"UtilitiesApplication",
+        "operatingSystem":"Any",
+        "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},
+        "featureList":["YouTube video download","TikTok video download without watermark","Instagram Reels download","HD quality","No signup required"]
+      },
+      {
+        "@type":"FAQPage",
+        "mainEntity":[
+          {"@type":"Question","name":"How do I download a YouTube video?","acceptedAnswer":{"@type":"Answer","text":"Paste the YouTube video URL into the box above, click Get Video, select your preferred quality, then click Download."}},
+          {"@type":"Question","name":"Can I download TikTok videos without watermark?","acceptedAnswer":{"@type":"Answer","text":"Yes! WeeY Downloader fetches the original TikTok video without the watermark overlay."}},
+          {"@type":"Question","name":"How do I download Instagram Reels?","acceptedAnswer":{"@type":"Answer","text":"Copy the Reel URL from Instagram, paste it into WeeY Downloader, and click Download."}},
+          {"@type":"Question","name":"Is WeeY Downloader free?","acceptedAnswer":{"@type":"Answer","text":"Yes, WeeY Downloader is completely free to use with no account or signup required."}},
+          {"@type":"Question","name":"What quality can I download videos in?","acceptedAnswer":{"@type":"Answer","text":"WeeY Downloader offers all available quality options from the source platform, up to HD 720p and above depending on the video."}}
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+
+  <!-- ★ ADSENSE: Replace ca-pub-XXXXXXXXXXXXXXXX with your publisher ID -->
+  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+</head>
+<body>
+
+<!-- ══ HEADER ════════════════════════════════════════════════════════════ -->
+<header class="site-header">
+  <nav class="nav container" aria-label="Main navigation">
+    <a href="/" class="logo" aria-label="WeeY Downloader Home">
+      <span class="logo-icon">▼</span>
+      <span class="logo-text">WeeY<span class="logo-accent">Downloader</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#how-to">How it Works</a></li>
+      <li><a href="#platforms">Platforms</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ══ BLOBS ═════════════════════════════════════════════════════════════ -->
+<div class="blobs" aria-hidden="true">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+</div>
+
+<!-- ══ MAIN ══════════════════════════════════════════════════════════════ -->
+<main>
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="container hero-inner">
+      <div class="hero-badge">⚡ Free • Fast • No Watermark</div>
+      <h1 id="hero-heading">Download Videos from<br /><span class="gradient-text">YouTube, TikTok & Instagram</span></h1>
+      <p class="hero-sub">Paste any video link and download instantly in HD quality — no signup, no software needed.</p>
+
+      <!-- Downloader Card -->
+      <div class="downloader-card glass" role="main" aria-label="Video downloader">
+        <div class="platform-badges" id="platformBadges" aria-live="polite">
+          <span class="badge badge-yt" data-platform="youtube" title="YouTube supported">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zm-13.9 8.3V9.5l6.3 2.5-6.3 2.5z"/></svg>
+            YouTube
+          </span>
+          <span class="badge badge-tt" data-platform="tiktok" title="TikTok supported">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.6 3.3A4.5 4.5 0 0 1 15.1 0h-3.2v16.4a2.7 2.7 0 0 1-2.7 2.3 2.7 2.7 0 0 1-2.7-2.7 2.7 2.7 0 0 1 2.7-2.7c.3 0 .5 0 .8.1V10a6 6 0 0 0-.8-.1A5.9 5.9 0 0 0 3.3 15.9a5.9 5.9 0 0 0 5.9 5.9 5.9 5.9 0 0 0 5.9-5.9V8.4a7.6 7.6 0 0 0 4.5 1.4V6.6a4.5 4.5 0 0 1-0.1-3.3z"/></svg>
+            TikTok
+          </span>
+          <span class="badge badge-ig" data-platform="instagram" title="Instagram supported">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 3.3.2 4.8 1.7 5 5 .1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.2 3.3-1.7 4.8-5 5-1.3.1-1.6.1-4.9.1s-3.6 0-4.8-.1c-3.3-.2-4.8-1.7-5-5C2.2 15.6 2.2 15.3 2.2 12s0-3.6.1-4.8c.2-3.3 1.7-4.8 5-5C8.4 2.2 8.8 2.2 12 2.2zM12 0C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1 0 8.3 0 8.7 0 12c0 3.3 0 3.7.1 4.9.2 4.4 2.6 6.8 7 7C8.3 24 8.7 24 12 24s3.7 0 4.9-.1c4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.2-4.4-2.6-6.8-7-7C15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4A6.2 6.2 0 0 0 12 5.8zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.8a1.4 1.4 0 1 0 0 2.8 1.4 1.4 0 0 0 0-2.8z"/></svg>
+            Instagram
+          </span>
+        </div>
+
+        <div class="input-group">
+          <input type="url" id="videoUrl" class="url-input" placeholder="Paste YouTube, TikTok or Instagram link here…" aria-label="Video URL" autocomplete="off" spellcheck="false" />
+          <button id="pasteBtn" class="btn-paste" title="Paste from clipboard" aria-label="Paste URL from clipboard">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+          </button>
+          <button id="fetchBtn" class="btn-primary" aria-label="Get video information">
+            <span class="btn-text">Get Video</span>
+            <span class="btn-spinner" aria-hidden="true"></span>
+          </button>
+        </div>
+
+        <div id="errorMsg" class="error-msg" role="alert" aria-live="assertive" hidden></div>
+
+        <!-- Video Result Card -->
+        <div id="resultCard" class="result-card" hidden aria-live="polite">
+          <div class="result-inner">
+            <div class="thumb-wrap">
+              <img id="thumbnail" src="" alt="Video thumbnail" class="thumbnail" loading="lazy" />
+              <span id="duration" class="duration-badge" aria-label="Duration"></span>
+            </div>
+            <div class="video-meta">
+              <p id="platform-tag" class="platform-tag"></p>
+              <h2 id="videoTitle" class="video-title"></h2>
+              <p id="uploader" class="uploader"></p>
+              <div class="format-group">
+                <label for="formatSelect" class="format-label">Quality</label>
+                <select id="formatSelect" class="format-select" aria-label="Select download quality"></select>
+              </div>
+              <button id="downloadBtn" class="btn-download" aria-label="Download video">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                <span class="dl-btn-text">Download</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Progress bar -->
+          <div id="progressWrap" class="progress-wrap" hidden>
+            <div class="progress-bar-track" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+              <div id="progressBar" class="progress-bar-fill"></div>
+            </div>
+            <div class="progress-info">
+              <span id="progressPct">0%</span>
+              <span id="progressSpeed"></span>
+              <span id="progressEta"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="disclaimer">By using WeeY Downloader you agree to download only content you have rights to access.</p>
+    </div>
+  </section>
+
+  <!-- AD SLOT 1: Leaderboard (728×90 / responsive) -->
+  <div class="ad-container container" aria-label="Advertisement">
+    <ins class="adsbygoogle ad-leaderboard"
+         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+         data-ad-slot="1111111111"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- FEATURES -->
+  <section class="features section" aria-labelledby="features-heading">
+    <div class="container">
+      <h2 id="features-heading">Why Millions Choose WeeY Downloader</h2>
+      <div class="cards-grid">
+        <article class="feature-card glass">
+          <div class="feature-icon">⚡</div>
+          <h3>Lightning Fast</h3>
+          <p>Downloads process at maximum speed directly from the source. No throttling, no queues.</p>
+        </article>
+        <article class="feature-card glass">
+          <div class="feature-icon">🚫</div>
+          <h3>No Watermark</h3>
+          <p>TikTok videos are downloaded clean — no platform watermark on your saved content.</p>
+        </article>
+        <article class="feature-card glass">
+          <div class="feature-icon">🔒</div>
+          <h3>Secure & Private</h3>
+          <p>We never store your videos. Files are deleted from our servers immediately after download.</p>
+        </article>
+        <article class="feature-card glass">
+          <div class="feature-icon">📱</div>
+          <h3>Works on Any Device</h3>
+          <p>Use WeeY on desktop, tablet, or mobile. No app installation required — works in your browser.</p>
+        </article>
+        <article class="feature-card glass">
+          <div class="feature-icon">🆓</div>
+          <h3>Completely Free</h3>
+          <p>No subscription, no hidden fees, no account required. WeeY Downloader is free forever.</p>
+        </article>
+        <article class="feature-card glass">
+          <div class="feature-icon">🎬</div>
+          <h3>HD Quality</h3>
+          <p>Choose from multiple quality options. Download in the highest resolution available for the video.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-to section" id="how-to" aria-labelledby="howto-heading">
+    <div class="container">
+      <h2 id="howto-heading">How to Download Videos — 3 Simple Steps</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Copy the Link</h3>
+          <p>Open YouTube, TikTok or Instagram and copy the video URL from the address bar or share menu.</p>
+        </div>
+        <div class="step-arrow" aria-hidden="true">→</div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>Paste &amp; Fetch</h3>
+          <p>Paste the link into WeeY Downloader and click <strong>Get Video</strong>. We'll load the video info instantly.</p>
+        </div>
+        <div class="step-arrow" aria-hidden="true">→</div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>Download</h3>
+          <p>Select your preferred quality and click <strong>Download</strong>. Your video saves directly to your device.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLATFORMS -->
+  <section class="platforms section" id="platforms" aria-labelledby="platforms-heading">
+    <div class="container">
+      <h2 id="platforms-heading">Supported Platforms</h2>
+      <div class="platform-cards">
+        <article class="platform-card glass">
+          <div class="picon picon-yt">▶</div>
+          <h3>YouTube Downloader</h3>
+          <p>Download any public YouTube video in HD. Supports regular videos, Shorts, and more. Get the best available quality without needing extra software.</p>
+          <ul>
+            <li>✓ YouTube Videos</li>
+            <li>✓ YouTube Shorts</li>
+            <li>✓ Up to HD 720p+</li>
+          </ul>
+        </article>
+        <article class="platform-card glass">
+          <div class="picon picon-tt">♪</div>
+          <h3>TikTok Downloader</h3>
+          <p>Save TikTok videos without the watermark. Download any TikTok clip directly to your device in full quality.</p>
+          <ul>
+            <li>✓ TikTok Videos</li>
+            <li>✓ No Watermark</li>
+            <li>✓ Full Quality</li>
+          </ul>
+        </article>
+        <article class="platform-card glass">
+          <div class="picon picon-ig">◉</div>
+          <h3>Instagram Downloader</h3>
+          <p>Download Instagram Reels, posts and stories. Simply copy the link and paste it to save your favourite content.</p>
+          <ul>
+            <li>✓ Instagram Reels</li>
+            <li>✓ Instagram Posts</li>
+            <li>✓ Stories</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- AD SLOT 2: Rectangle / Banner between sections -->
+  <div class="ad-container container" aria-label="Advertisement">
+    <ins class="adsbygoogle ad-rectangle"
+         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+         data-ad-slot="2222222222"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- FAQ -->
+  <section class="faq section" id="faq" aria-labelledby="faq-heading">
+    <div class="container faq-inner">
+      <h2 id="faq-heading">Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <details class="faq-item glass">
+          <summary>How do I download a YouTube video for free?</summary>
+          <p>Copy the YouTube video URL, paste it into the input box at the top of this page, click <strong>Get Video</strong>, choose your quality, and hit <strong>Download</strong>. The video will save to your device automatically.</p>
+        </details>
+        <details class="faq-item glass">
+          <summary>Can I download TikTok videos without a watermark?</summary>
+          <p>Yes! WeeY Downloader fetches the original video file directly, which does not contain TikTok's watermark overlay. Your downloaded video will be clean and watermark-free.</p>
+        </details>
+        <details class="faq-item glass">
+          <summary>How do I download Instagram Reels?</summary>
+          <p>Open Instagram, go to the Reel you want to save, tap the share icon and select <em>Copy Link</em>. Then paste that link into WeeY Downloader and click Download.</p>
+        </details>
+        <details class="faq-item glass">
+          <summary>Is WeeY Downloader completely free?</summary>
+          <p>Yes. WeeY Downloader is 100% free with no account, subscription, or hidden fees required. You can download unlimited videos at no cost.</p>
+        </details>
+        <details class="faq-item glass">
+          <summary>What video quality options are available?</summary>
+          <p>WeeY Downloader shows all available quality options for each video. You can typically choose from 360p up to HD 720p and above, depending on what the original uploader published.</p>
+        </details>
+        <details class="faq-item glass">
+          <summary>Is it safe to use WeeY Downloader?</summary>
+          <p>Yes. We do not store any of your videos or personal data. Downloaded files are deleted from our servers immediately after you receive them. No account or login is ever required.</p>
+        </details>
+        <details class="faq-item glass">
+          <summary>Does WeeY Downloader work on mobile?</summary>
+          <p>Yes! WeeY Downloader works on all modern browsers including mobile Chrome and Safari. No app installation is needed — just open the website and start downloading.</p>
+        </details>
+        <details class="faq-item glass">
+          <summary>Why can't I download some videos?</summary>
+          <p>Some videos may be private, region-locked, or require login to view. WeeY Downloader can only download publicly accessible videos. If you encounter an error, try checking that the video is publicly visible.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ══ FOOTER ═════════════════════════════════════════════════════════════ -->
+<footer class="site-footer">
+  <!-- AD SLOT 3: Footer banner -->
+  <div class="ad-container container" aria-label="Advertisement">
+    <ins class="adsbygoogle ad-footer"
+         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+         data-ad-slot="3333333333"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+  <div class="footer-inner container">
+    <div class="footer-brand">
+      <a href="/" class="logo" aria-label="WeeY Downloader Home">
+        <span class="logo-icon">▼</span>
+        <span class="logo-text">WeeY<span class="logo-accent">Downloader</span></span>
+      </a>
+      <p>The fastest free online video downloader for YouTube, TikTok and Instagram.</p>
+    </div>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <div class="footer-col">
+        <h4>Download</h4>
+        <ul>
+          <li><a href="/#hero-heading">YouTube Downloader</a></li>
+          <li><a href="/#hero-heading">TikTok Downloader</a></li>
+          <li><a href="/#hero-heading">Instagram Downloader</a></li>
+          <li><a href="/#hero-heading">Reels Downloader</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#how-to">How it Works</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#platforms">Platforms</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="footer-bottom container">
+    <p>© 2025 WeeY Downloader. For personal use only. Respect copyright laws.</p>
+  </div>
+</footer>
+
+<!-- Toast -->
+<div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true"></div>
+
+<button class="scroll-top-btn" type="button" aria-label="Scroll to top" title="Scroll to top" onclick="window.scrollTo({ top: 0, left: 0, behavior: 'auto' })">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5l7 7-1.4 1.4L13 9.8V19h-2V9.8l-4.6 3.6L5 12l7-7z"/></svg>
+</button>
+
+<script src="/js/app.js"></script>
+</body>
+</html>
