@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://weeydownloader.com/sitemap.xml
+Sitemap: https://weeydownloader.me/sitemap.xml

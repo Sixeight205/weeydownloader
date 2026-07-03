@@ -3,25 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WeeY Downloader — Free YouTube, TikTok & Instagram Video Downloader</title>
-  <meta name="description" content="Download YouTube, TikTok and Instagram videos for free in HD quality. No watermark, no signup required. Fast and easy online video downloader." />
-  <meta name="keywords" content="youtube video downloader, tiktok video downloader, instagram video downloader, download youtube videos free, tiktok downloader no watermark, instagram reels downloader, online video downloader" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://weeydownloader.com/" />
+  <title>WeeY Downloader | Free YouTube Downloader, TikTok Downloader & Instagram Downloader</title>
+  <meta name="description" content="WeeY Downloader is a free YouTube downloader, TikTok downloader without watermark, and Instagram downloader in HD quality." />
+  <meta name="keywords" content="YouTube downloader, TikTok downloader, Instagram downloader, free YouTube downloader, TikTok downloader no watermark, Instagram reels downloader, online video downloader" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="application-name" content="WeeY Downloader" />
+  <link rel="canonical" href="https://weeydownloader.me/" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="adsense-client" content="ca-pub-XXXXXXXXXXXXXXXX" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://weeydownloader.com/" />
-  <meta property="og:title" content="WeeY Downloader — Free YouTube, TikTok & Instagram Video Downloader" />
-  <meta property="og:description" content="Download YouTube, TikTok and Instagram videos for free in HD. No watermark, no signup." />
-  <meta property="og:image" content="https://weeydownloader.com/og-image.svg" />
+  <meta property="og:url" content="https://weeydownloader.me/" />
+  <meta property="og:title" content="WeeY Downloader | Free YouTube Downloader, TikTok Downloader & Instagram Downloader" />
+  <meta property="og:description" content="Free YouTube downloader, TikTok downloader without watermark, and Instagram downloader in HD quality." />
+  <meta property="og:image" content="https://weeydownloader.me/og-image.svg" />
+  <meta property="og:image:alt" content="WeeY Downloader homepage preview" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="WeeY Downloader — Free Video Downloader" />
-  <meta name="twitter:description" content="Download YouTube, TikTok and Instagram videos for free in HD quality." />
-  <meta name="twitter:image" content="https://weeydownloader.com/og-image.svg" />
+  <meta name="twitter:title" content="WeeY Downloader | Free YouTube Downloader, TikTok Downloader & Instagram Downloader" />
+  <meta name="twitter:description" content="Free YouTube downloader, TikTok downloader without watermark, and Instagram downloader in HD quality." />
+  <meta name="twitter:image" content="https://weeydownloader.me/og-image.svg" />
 
   <!-- Structured Data -->
   <script type="application/ld+json">
@@ -31,12 +35,18 @@
       {
         "@type":"WebApplication",
         "name":"WeeY Downloader",
-        "url":"https://weeydownloader.com",
-        "description":"Free online video downloader for YouTube, TikTok and Instagram",
+        "url":"https://weeydownloader.me",
+        "description":"Free YouTube downloader, TikTok downloader without watermark, and Instagram downloader in HD quality",
         "applicationCategory":"UtilitiesApplication",
         "operatingSystem":"Any",
         "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},
         "featureList":["YouTube video download","TikTok video download without watermark","Instagram Reels download","HD quality","No signup required"]
+      },
+      {
+        "@type":"WebSite",
+        "name":"WeeY Downloader",
+        "url":"https://weeydownloader.me/",
+        "description":"Free YouTube downloader, TikTok downloader without watermark, and Instagram downloader"
       },
       {
         "@type":"FAQPage",
@@ -57,8 +67,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/css/style.css" />
 
-  <!-- ★ ADSENSE: Replace ca-pub-XXXXXXXXXXXXXXXX with your publisher ID -->
-  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+  <script>
+    (function () {
+      const meta = document.querySelector('meta[name="adsense-client"]');
+      const clientId = meta && meta.content ? meta.content.trim() : '';
+      if (!clientId || clientId.includes('XXXXXXXXXXXXXXXX')) return;
+
+      window.adsbygoogle = window.adsbygoogle || [];
+      const script = document.createElement('script');
+      script.async = true;
+      script.crossOrigin = 'anonymous';
+      script.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${encodeURIComponent(clientId)}`;
+      document.head.appendChild(script);
+    }());
+  </script>
 </head>
 <body>
 
@@ -93,6 +115,7 @@
       <div class="hero-badge">⚡ Free • Fast • No Watermark</div>
       <h1 id="hero-heading">Download Videos from<br /><span class="gradient-text">YouTube, TikTok & Instagram</span></h1>
       <p class="hero-sub">Paste any video link and download instantly in HD quality — no signup, no software needed.</p>
+      <p class="hero-meta">Free YouTube downloader, TikTok downloader without watermark, and Instagram downloader for quick HD saves.</p>
 
       <!-- Downloader Card -->
       <div class="downloader-card glass" role="main" aria-label="Video downloader">
