@@ -2,6 +2,7 @@ const express = require('express');
 const { spawn, spawnSync } = require('child_process');
 const path = require('path');
 const fs = require('fs');
+const os = require('os');
 const { v4: uuidv4 } = require('uuid');
 
 const app = express();
@@ -54,10 +55,18 @@ function runYtDlp(args) {
 }
 
 // ── Downloads temp directory ──────────────────────────────────────────────────
-const DOWNLOADS_DIR = path.join(__dirname, 'downloads');
-if (!fs.existsSync(DOWNLOADS_DIR)) {
-  fs.mkdirSync(DOWNLOADS_DIR, { recursive: true });
-}
+const isServerless = Boolean(
+  process.env.VERCEL ||
+  process.env.NETLIFY ||
+  process.env.AWS_LAMBDA_FUNCTION_NAME ||
+  process.env.AWS_EXECUTION_ENV ||
+  process.env.DYNO
+);
+
+const DOWNLOADS_DIR = process.env.DOWNLOADS_DIR
+  || (isServerless ? path.join(os.tmpdir(), 'weeydownloader-downloads') : path.join(__dirname, 'downloads'));
+
+fs.mkdirSync(DOWNLOADS_DIR, { recursive: true });
 
 // Clean up leftover files older than 1 hour on startup
 cleanOldFiles();
